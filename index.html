@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <meta content="Pedro Gomes">
+        <title>Início Jquery</title>
+    </head>
+    <body>
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Consulta CEP</a>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+            </ul>
+
+
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="CEP" aria-label="Search" id="cep">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="consultaCep()">Buscar</button>
+            </div>
+          
+        </nav>
+
+        <div class="container" id="cep">
+            <div class="mt-5">
+                <h4 id="titleCep">CEP</h4>
+            </div>
+            <table class="table mt-5 w-50">
+                <tbody>
+                    <tr>
+                        <td>Logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Localidade</td>
+                        <td id="localidade"></td>
+                    </tr>
+                    <tr>
+                        <td>UF</td>
+                        <td id="uf"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!--SCRIPTS-->
+        <script src="./js/main.js"></script>
+        <script src="./js/jquey.js"></script>
+    </body>
+</html>
